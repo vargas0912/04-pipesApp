@@ -17,18 +17,18 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-          label: 'Pipes de Angular',
-          icon: 'pi pi-desktop',
-          items: [
-            {
-                label: 'Textos y fechas', 
-                icon: 'pi pi-align-left',  
-                routerLink: '/'                
-            },
-            {
-              label: 'Numeros', 
-              icon: 'pi pi-dollar',  
-              routerLink: 'numeros'                
+        label: 'Pipes de Angular',
+        icon: 'pi pi-desktop',
+        items: [
+          {
+            label: 'Textos y fechas', 
+            icon: 'pi pi-align-left',  
+            routerLink: '/'                
+          },
+          {
+            label: 'Numeros', 
+            icon: 'pi pi-dollar',  
+            routerLink: 'numeros'                
           },
           {
             label: 'No comunes', 
