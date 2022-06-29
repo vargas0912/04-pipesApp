@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ordenar',
-  templateUrl: './ordenar.component.html',
+  templateUrl: './ordenar.component.html',  
   styles: [
   ]
 })
-export class OrdenarComponent implements OnInit {
+export class OrdenarComponent  {
+  inMayus: boolean = false
 
-  constructor() { }
-
-  ngOnInit(): void {
+  toggleMayus(){
+    this.inMayus = !this.inMayus;
   }
 
 }
