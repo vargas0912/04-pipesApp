@@ -8,14 +8,25 @@ import { NumerosComponent } from './pages/numeros/numeros.component';
 import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 
+import { MayusculasPipe } from './pipes/mayusculas.pipe';
+import { CanFlyPipe } from './pipes/canFly.pipe';
+import { ColorPipe } from './pipes/color.pipe';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
 
 
 @NgModule({
   declarations: [
+    //components
     NumerosComponent,
     NoComunesComponent,
     BasicosComponent,
-    OrdenarComponent
+    OrdenarComponent,
+
+    //pipes
+    CanFlyPipe,
+    ColorPipe,
+    MayusculasPipe,
+    OrdenarPipe
   ],
   imports: [
     CommonModule,
