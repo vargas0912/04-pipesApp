@@ -9,7 +9,9 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 
 import { MayusculasPipe } from './pipes/mayusculas.pipe';
-
+import { CanFlyPipe } from './pipes/canFly.pipe';
+import { ColorPipe } from './pipes/color.pipe';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
 
 
 @NgModule({
@@ -21,7 +23,10 @@ import { MayusculasPipe } from './pipes/mayusculas.pipe';
     OrdenarComponent,
 
     //pipes
-    MayusculasPipe
+    CanFlyPipe,
+    ColorPipe,
+    MayusculasPipe,
+    OrdenarPipe
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Color, Hero } from '../../interfaces/ventas.interfaces';
 
 @Component({
   selector: 'app-ordenar',
@@ -7,10 +8,44 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class OrdenarComponent  {
-  inMayus: boolean = false
+  inMayus: boolean = false;
+
+  orderBy: string = 'name';
+
+  heros: Hero[] = [
+    {
+      name: 'Superman',
+      fly: true,
+      color: Color.Blue
+    },
+    {
+      name: 'Batman',
+      fly: false,
+      color: Color.Black
+    },
+    {
+      name: 'Robin',
+      fly: false,
+      color: Color.Red
+    },
+    {
+      name: 'Darevil',
+      fly: false,
+      color: Color.Black
+    },
+    {
+      name: 'Linterna verde',
+      fly: true,
+      color: Color.Green
+    }
+  ]
 
   toggleMayus(){
     this.inMayus = !this.inMayus;
+  }
+
+  changeOrder(value:string){
+    this.orderBy = value;
   }
 
 }
